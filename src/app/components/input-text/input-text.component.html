@@ -1,0 +1,5 @@
+<mat-form-field>
+    <mat-label>{{ label }}</mat-label>
+    <input matInput type="text">
+    <mat-error *ngIf="control.errors">{{ control.errors(Object.keys()) }}</mat-error>
+</mat-form-field>
