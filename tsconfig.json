@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

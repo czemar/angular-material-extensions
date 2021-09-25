@@ -1,0 +1,90 @@
+@import '../../style/util';
+
+$background: #2E3649;
+$sidebar-width: 300px;
+
+.sidebar {
+  position: absolute;
+  left: -#{$sidebar-width};
+  z-index: 200;
+
+  width: $sidebar-width;
+  height: 100%;
+  background: $background;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+
+  @include lg {
+    left: 0;
+    position: relative;
+  }
+
+  &.is-open {
+    animation-name: open;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+
+    @include lg { animation-name: none; }
+  }
+
+  &:not(.is-open) {
+    animation-name: close;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+
+    @include lg { animation-name: none; }
+  }
+
+  .sidebar-header {
+    width: 100%;
+    padding: 10px 0;
+
+    .company {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      .label {
+        color: white;
+        font-weight: 600;
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 10px;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .sidebar-items {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+
+.dark-background {
+  @include lg {
+    display: none;
+  }
+}
+
+@keyframes open {
+  from {
+    left: -#{$sidebar-width};
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes close {
+  from {
+    left: 0;
+  }
+  to {
+    left: -#{$sidebar-width};
+  }
+}

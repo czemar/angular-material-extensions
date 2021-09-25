@@ -1,0 +1,46 @@
+$opacity: .5;
+
+.dark-background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: $opacity;
+  z-index: 100;
+  
+  &.visible {
+    animation-name: fade-in;
+  }
+
+  &.visible {
+    animation-name: fade-in;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    pointer-events: all;
+  }
+
+  &:not(.visible) {
+    animation-name: fade-out;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: $opacity;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: $opacity;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../style/util';
+
+$background: #212839;
+
+.navbar {
+  width: 100%;
+  background: $background;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+  @include lg {
+    height: 70px;
+    padding-left: 14px;
+  }
+}

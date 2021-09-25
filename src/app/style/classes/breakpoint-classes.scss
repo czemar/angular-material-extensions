@@ -1,0 +1,7 @@
+@import '../mixins/breakpoints';
+
+.sm-and-md-only {
+  @include lg {
+    display: none;
+  }
+}

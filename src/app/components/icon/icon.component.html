@@ -1,0 +1,11 @@
+<div class="icon" [ngSwitch]="prefix">
+  <ng-container *ngSwitchCase="EIconPrefix.MATERIAL">
+    <mat-icon>{{ rawIcon }}</mat-icon>
+  </ng-container>
+  <ng-container *ngSwitchCase="EIconPrefix.FONT_AWESOME">
+    <p>TODO: Font awesome icons implementation</p>
+  </ng-container>
+  <ng-container *ngSwitchCase="EIconPrefix.CUSTOM">
+    <img [src]="rawIcon">
+  </ng-container>
+</div>

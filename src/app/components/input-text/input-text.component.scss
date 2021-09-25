@@ -1,0 +1,39 @@
+$background: #2E3649;
+
+$border-color: #4E576E;
+$border-radius: 6px;
+
+$padding: 13px 20px 12px 20px;
+$font-size: 12px;
+$font-color: white;
+$font-family: 'Montserrat' sans-serif;
+
+$placeholder-font-color: #838DA7;
+
+.form-field-input {
+  box-sizing: border-box;
+  background: $background;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  padding: $padding;
+  font-size: $font-size;
+  font-family: $font-family;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  color: $font-color;
+  transition: 
+    background .2s ease,
+    border-color .2s ease;
+
+  &::placeholder {
+    color: $placeholder-font-color;
+  }
+
+  &:hover {
+    background: darken($background, 2);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: lighten($border-color, 15);
+  }
+}

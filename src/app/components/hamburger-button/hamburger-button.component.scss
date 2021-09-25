@@ -1,0 +1,23 @@
+.hamburger-button {
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .2s ease;
+  -webkit-tap-highlight-color: transparent;
+
+  &:active {
+    background: #161a25;
+  }
+
+  .icon::ng-deep {
+    .mat-icon {
+      $size: 24px;
+
+      font-size: $size;
+      width: $size;
+      height: $size;
+    }
+  }
+}

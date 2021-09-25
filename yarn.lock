@@ -1568,14 +1568,19 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@czemar/reactive-forms@1.0.2":
-  version "1.0.2"
-  resolved "https://npm.pkg.github.com/download/@czemar/reactive-forms/1.0.2/797b9557bbba7c4f4974b99b6a9a4021ede7d2fd1d40e306524007148b61d0ba#b9ebb2166751e804ead4351ebe112bebe793aabb"
-  integrity sha512-nyZMPzGSuLax3OB0C4Uz+HEgyrp83Ook+iLUVtYkauomtBTSwXgCTYmGuhyrtLfxWZSNwdT7b63OMXodnDdkLA==
+"@czemar/reactive-forms@1.0.8":
+  version "1.0.8"
+  resolved "https://npm.pkg.github.com/download/@czemar/reactive-forms/1.0.8/f91902e9ee6ce0ff1790b54bc8c1f3c2ee47b7b0f71c8db2f40661353ac50106#bf8c7b77cf977ee56225ccbb59c42116ee8da465"
+  integrity sha512-YuWoJozMme8XeGT0E3UyJj7bzUozXvPzAh2V5rclNgnIF2Y2X2dZVffbQfGdbrgKxKlJ6J1kNQsbwkATA62+CA==
   dependencies:
     "@angular/core" "^12.2.4"
     "@angular/forms" "^12.2.4"
     rxjs "^7.3.0"
+
+"@czemar/style-reset@^1.0.0":
+  version "1.0.0"
+  resolved "https://npm.pkg.github.com/download/@czemar/style-reset/1.0.0/2d8940939a7e194e5fc4e8fe1bad37e6925bac64bfa7a3cd0c36ff4948791a29#7d23e4a4eb7b9d6ec9cf78eb6487d06ae2345cbb"
+  integrity sha512-iIPaxIgXrLwSCOIEoQjsTotidP/nW4gtoqSrugEQuA5xQaJrVtaRBtXGMQvNWgwkvaiyFgtlMLMGthGebIJ6rw==
 
 "@discoveryjs/json-ext@0.5.3", "@discoveryjs/json-ext@^0.5.3":
   version "0.5.3"
@@ -12004,14 +12009,14 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@6.6.7, rxjs@~6.6.0:
+rxjs@6.6.7:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.2.0, rxjs@^7.3.0:
+rxjs@7.3.0, rxjs@^7.2.0, rxjs@^7.3.0:
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.3.0.tgz#39fe4f3461dc1e50be1475b2b85a0a88c1e938c6"
   integrity sha512-p2yuGIg9S1epc3vrjKf6iVb3RCaAYjYskkO+jHIaV0IjOPlJop4UnodOoFb2xeNwlguqLYvGw1b1McillYb5Gw==

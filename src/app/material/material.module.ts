@@ -11,10 +11,11 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 /**
- * NgModule that includes all Material modules.
+ * NgModule that includes Material modules.
 */
 @NgModule({
     imports: [
@@ -36,8 +37,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
         // Material
         MatFormFieldModule,
-        MatInputModule
-
+        MatInputModule,
+        MatIconModule
     ]
 })
 export class MaterialModule {}

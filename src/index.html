@@ -1,13 +1,24 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>AngularMaterialExtensions</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AngularMaterialExtensions</title>
+  
+  <script>
+    setTimeout(() => { document.body.classList.remove('preload'); }, 500);
+  </script>
+
 </head>
-<body>
+<body class="preload">
+
   <app-root></app-root>
+
 </body>
 </html>

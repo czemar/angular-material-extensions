@@ -1,0 +1,14 @@
+<nav class="sidebar" [class.is-open]="isOpen" [class.animate]="animate">
+  <section class="sidebar-header">
+    <div class="company">
+      <img class="logo" [src]="logo" alt="logo">
+      <span class="label">{{ label }}</span>
+    </div>
+  </section>
+  <section class="sidebar-items">
+    <ng-content></ng-content>
+  </section>
+</nav>
+
+<!-- Background darkening -->
+<ame-dark-background [visible]="isOpen" (click)="close()" class="dark-background"></ame-dark-background>
